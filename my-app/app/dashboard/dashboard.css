@@ -1,0 +1,345 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    .container{
+      display: flex;
+      min-height: 100vh; 
+    }
+
+    .sidebar {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      padding: 10px;
+      border-right: 1px solid #ddd;
+    }
+
+    .sidebar .top-links{
+      padding: 1rem 4rem 1rem 1rem;
+      margin: 0;
+      margin-bottom: 1rem;
+      background-color: #1b1b1b;
+      border-radius: 10px;
+  
+    }
+    .sidebar .top-links p{
+      margin: 0;
+      color: #fbfbfb;
+    }
+    .sidebar ul {
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar ul li{
+      padding: 1rem 4rem 1rem 1rem;
+      list-style: none;
+      border-radius: 10px;
+    }
+    .sidebar ul li a{
+      color: #1b1b1b;
+      text-decoration: none;
+    }
+    .sidebar ul li:hover{
+      background-color: #e7e9eb;
+    }
+    .sidebar .bottom-links {
+      margin-top: auto;
+    }
+
+    .content{
+      width:80%;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f8f9fa;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .search-input {
+      flex: 1;
+      max-width: 400px;
+      padding: 8px 12px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+    
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .notification-icon {
+      font-size: 20px;
+      cursor: pointer;
+    }
+    
+    .profile-dropdown {
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .profile-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: white;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      border-radius: 4px;
+      min-width: 160px;
+      overflow: hidden;
+    }
+    
+    .profile-dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    
+    .dropdown-menu a, .dropdown-menu p {
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+      color: #333;
+      white-space: nowrap;
+    }
+    
+    .dropdown-menu a:hover, .dropdown-menu p:hover {
+      background-color: #f1f1f1;
+    }
+    
+    .protfolio-dash {
+      padding: 20px;
+    }
+    
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    
+    .portfolio-item .portfolio-hover {
+      padding: 1rem;
+    }
+    
+    .portfolio-item .portfolio-hover:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    
+    .gird-container {
+      display: grid;
+      grid-template-columns: 7fr 3fr;
+      gap: 24px;
+    }
+    
+    .chart-container {
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    
+    .watchlist {
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    
+    .watchlist-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    
+    .watchlist-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .watchlist-image img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .watchlist-right {
+      text-align: right;
+    }
+  
+
+    #balance {
+      font-size: 24px;
+      margin: 20px 0;
+      color: #fff;
+
+  }
+  .iconhidden{
+    display: flex;
+  }
+
+  .itemiconhidden{
+      margin-left: 1rem;
+  }
+  
+  .btn {
+      padding: 5px 10px;
+      font-size: 16px;
+      color: #333;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+      background-color: #9fa7a0;
+  }
+
+  .chart-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+.watchlist-content {
+  transition: max-height 0.1s ease-out, padding 0.3s ease-out;
+  overflow: hidden;
+  max-height: 1000px; 
+  padding: 10px 0; 
+}
+
+.watchlist-content.collapsed {
+  max-height: 0; 
+  padding: 0; 
+}
+.watchlist.collapsed {
+  height: 75px;
+}
+.watchlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.watchlist-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.watchlist-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.watchlist-right {
+  text-align: right;
+}
+
+button {
+  background-color: #4f9ef8;
+  color: rgb(21, 21, 21);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5687ba;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  .gird-container {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-container, .watchlist {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .user-info {
+    gap: 10px;
+  }
+
+  .notification-icon {
+    font-size: 18px;
+  }
+
+  .profile-name {
+    font-size: 14px;
+  }
+
+  .profile-img {
+    width: 40px;
+    height: 40px;
+  }
+}

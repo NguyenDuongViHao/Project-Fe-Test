@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+  
+  .signUpBox {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+  }
+  
+  .title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111827;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputGroup {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+  
+  .input:focus {
+    border-color: #ec4899;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.5);
+  }
+  
+  .checkboxContainer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .checkbox {
+    margin-right: 0.5rem;
+    margin-top: 0.15rem; 
+  }
+  
+  .checkboxContainer label {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .checkboxContainer label a {
+    color: #ec4899;
+    text-decoration: none;
+  }
+  
+  .checkboxContainer label a:hover {
+    text-decoration: underline;
+  }
+  
+  .signUpButton {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #111827;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .signUpButton:hover {
+    background-color: #1f2937;
+  }
+  
+  .signInLink {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    text-align: center;
+  }
+  
+  .signInLink a {
+    color: #ec4899;
+    text-decoration: none;
+  }
+  
+  .signInLink a:hover {
+    text-decoration: underline;
+  }
+   
+
+  
